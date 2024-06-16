@@ -111,7 +111,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:plagia_oc/screens/welcome_screen.dart';
 import 'package:plagia_oc/utils/usermodel.dart';
 
-import '../widgets/snacbar.dart';
+import '../widgets/snackbar.dart';
 
 class Authentication extends StateNotifier<UserModel?> {
   final FirebaseAuth _auth = FirebaseAuth.instance;

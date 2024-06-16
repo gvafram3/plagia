@@ -5,7 +5,7 @@ import '../providers/auth_provider.dart';
 import '../widgets/build_container.dart';
 import '../widgets/build_light_theme_background.dart';
 import '../widgets/custom_textfield.dart';
-import '../widgets/snacbar.dart';
+import '../widgets/snackbar.dart';
 import 'login_page.dart';
 
 class SignUpPage extends ConsumerStatefulWidget {
