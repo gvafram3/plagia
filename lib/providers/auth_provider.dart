@@ -1,0 +1,13 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:plagia_oc/utils/authentication.dart';
+
+import '../utils/usermodel.dart';
+
+final authProvider = StateNotifierProvider<Authentication, UserModel?>((ref) {
+  return Authentication();
+});
+
+final userDetailsProvider = FutureProvider<UserModel?>((ref) async {
+  final auth = ref.watch(authProvider.notifier);
+  return await auth.getUserDetails();
+});
